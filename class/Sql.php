@@ -13,7 +13,7 @@ private function setParams($statement, $parameters = array()){
       
     foreach ($parameters as $key => $value) {
 	
-      $this->setParam($statement, $key, $value);
+    $this->setParam($statement, $key, $value);
 
     }
 
@@ -21,7 +21,8 @@ private function setParams($statement, $parameters = array()){
 
 private function setParam($statement, $key, $value){
 
-	$statement->binParam($key, $value);
+    $statement->binParam($key, $value);
+
 }
 
 public function query($rawQuery, $params = array()){
